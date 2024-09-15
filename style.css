@@ -1,0 +1,920 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend Deca";
+}
+
+.white {
+    color: white;
+}
+
+
+.red {
+    color:darkred
+}
+
+
+.flex {
+    display: flex;
+}
+
+
+/* In the hero section, to make the text overlay the image, while keep the responsiveness of the section.
+Instead of making the text haivng a position of absolute, make the image absolute, which cause the image to overlap over the text.
+But by control the z-index, put the text over the image. */
+.hero-wrapper {
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+
+    /* Dynamically adjusts the wrapper height between 760 to 870px based on the viewport */
+    height: 730px;
+
+    z-index: 0;
+    
+}
+
+.img-banner {
+    /* Makes the image fit the wrapper */
+    object-fit: cover;
+
+    /* Position the image */
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 791px;
+
+    z-index: -1;
+    padding-bottom: 100px;
+
+    filter: brightness(30%);
+
+}
+
+.img-ContactBanner {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 491px;
+    z-index: -1;
+    padding-bottom: 100px;
+    filter: brightness(30%);
+}
+
+.contact-overlay {
+    /* Position the text */
+    top: 55%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+
+    /* Using position relative, keep the image in normal document flow, but the image remain centers. */
+    position: relative;
+
+    font-size: 50px;
+    font-weight: 800;
+    font-family: Arial;
+    line-height: 50px;
+    z-index: 2;
+
+    padding-left: 75px;
+    padding-right: 75px;
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding-bottom: 30px;
+}
+
+
+
+.text-overlay {
+
+    /* Position the text */
+    top: 35%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+
+    /* Using position relative, keep the image in normal document flow, but the image remain centers. */
+    position: relative;
+
+    font-size: 50px;
+    font-weight: 800;
+    font-family: Arial;
+    line-height: 50px;
+    z-index: 2;
+
+    padding-left: 75px;
+    padding-right: 75px;
+    max-width: 1000px;
+
+    margin: auto;
+
+}
+
+.hero-button {
+    position: relative;
+    top: 30%;
+    left: 26%;
+    font-size: 25px;
+    font-weight: 550;
+    color: #fff;
+    background-color: darkred;
+    z-index:3;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+}
+
+.hero-button:hover {
+    color: darkred;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.wrapper {
+    padding-top: 100px;
+    width: 100%;
+    padding-bottom: 100px;
+    overflow: auto;
+}
+
+.wrapper-section2 {
+    padding-top:100px;
+    width: 100%;
+    padding-bottom: 100px;
+    overflow: auto;
+    background-color: #f0f0f081;
+}
+
+.contactSec1-wrapper {
+    padding-top:100px;
+    width: 100%;
+    padding-bottom: 100px;
+    overflow: auto;
+}
+
+.csSec2-wrapper{
+    padding-top:100px;
+    width: 100%;
+    padding-bottom: 100px;
+    overflow: auto;
+    position: relative;
+}
+
+.csImage {
+    width: min(80vw, 450px);
+    color: #fff;
+    padding: 26px;
+    gap: 20px;
+}
+
+
+.csImage2 {
+    width: min(80vw, 200px);
+    color: #fff;
+    gap: 20px;
+    margin: 25px 5px 15px
+}
+
+.csImage3 {
+    width: min(80vw, 200px);
+    gap: 20px;
+    margin: 45px 5px 15px 
+}
+
+.csImage:hover {
+    width: min(80vw, 550px);
+    transition: all 0.2s ease-in;
+}
+
+.csImage2:hover {
+    width: min(80vw, 260px);
+    transition: all 0.2s ease-in;
+}
+
+.csImage3:hover {
+    width: min(80vw, 260px);
+    transition: all 0.2s ease-in;
+}
+
+.csMargin {
+    margin-top: 55px;
+
+}
+
+.cs-imageWrapper {
+    background-color: rgba(8, 8, 124, 0.822);
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 50px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.csHeader {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(63, 62, 62);
+    position: relative;
+}
+
+.csHeader::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 8px;
+    background-color: blue;
+    margin: 20px auto 0;
+    border-radius: 2%;
+}
+
+.section1-Content {
+    width: 100%;
+    position: relative;
+}
+
+.wrapper-section2 img {
+    position: relative;
+    width: 100%;
+    padding-bottom:30px;
+}
+
+.section2-txt{
+    width: 100%;
+}
+
+.sec2-Header{
+    padding: 40px 30px 20px;
+    font-size: 44px;
+    font-family: Arial;
+    line-height: 44px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.sec2-Header::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 8px;
+    background-color: darkred;
+    margin: 20px auto 0;
+    border-radius: 2%;
+}
+
+.img-info{
+    width:100%;
+}
+
+.wrapper h2{
+    padding: 30px 30px 20px;
+    font-size: 44px;
+    font-family: Arial;
+    line-height: 44px;
+}
+
+.images-circle {
+    border-radius: 10%;
+}
+
+.wrapper p{
+    padding: 0px 30px 20px;
+    font-size: 16px;
+    font-family: Arial;
+    line-height: 24px;
+}
+
+.wrapper img{
+    width: 100%;
+    padding-top: 20px;
+    border-radius: 10%;
+}
+
+
+
+nav li {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.navSideBar {
+    padding-top: 30px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+}
+
+.navSideBar li {
+    padding: 5px;
+    padding-left: 30px;
+    width: 100%;
+}
+
+.navSideBar li:not(:first-child):hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: .5s;
+}
+
+nav li.decaLogo {
+    margin-right: auto;
+}
+
+.nav-listItems {
+    display: flex;
+    align-items: center;
+}
+
+.navSideBar a {
+    font: arial;
+    font-weight: 600;
+    height: 100%;
+    color: white;
+    align-items: center;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: blue;
+    transition: 0.3s;
+}
+
+
+.wrapper-CTA {
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    position: relative;
+    height: 760px;
+    z-index: 0;
+    
+}
+
+.heroBanner-CTA {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 791px;
+    z-index: -1;
+    filter: brightness(20%);
+}
+
+.CTA-overlay {
+
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+
+    position: relative;
+
+    font-size: 50px;
+    font-weight: 800;
+    font-family: Arial;
+    line-height: 80px;
+    z-index: 2;
+
+    padding-left: 75px;
+    padding-right: 75px;
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+.CTA-button {
+    position: relative;
+    top: 50%;
+    left: 33%;
+    font-size: 35px;
+    font-weight: 550;
+    color: #fff;
+    background-color: darkred;
+    z-index:3;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+}
+
+.CTA-button:hover {
+    color: darkred;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.wrapper-section3 {
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    position: relative;
+    height: clamp(760px, 125vh, 870px);
+    z-index: 0;
+}
+
+
+.section3-txt {
+    width: 100%;
+    padding-top: 240px;
+}
+
+.sec3Title {
+    font-weight: 800;
+    font: arial;
+    font-size: 25px;
+    color: white;
+}
+
+.achievementList {
+    position: relative;
+    padding-top: 50px;
+    color: white;
+    left: 20%;
+}
+
+.achievementList h1 {
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.sec3Title::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 8px;
+    background-color: darkred;
+    margin: 20px auto 0;
+    position: relative;
+    left: -15%;
+    border-radius: 2%;
+}
+
+.achievementList h3 {
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.contact-HeroWrapper {
+        overflow: hidden;
+        top: 0;
+        width: 100%;
+    
+        /* Dynamically adjusts the wrapper height between 760 to 870px based on the viewport */
+        height: 400px;
+    
+        z-index: 0;
+}
+
+.section1-Content h1 {
+    font: "Lexend Deca";
+    font-size: 50px;
+    padding-left: 20px;
+}
+
+.centerPadding {
+    padding: 10px 60px 0px;
+}
+
+.section1-Content h3 {
+    padding: 30px 30px 30px;
+    font: arial;
+}
+
+.socialIcon {
+    width:45px;
+    height: 45px;
+    position: relative;
+    top: -5%;
+}
+
+
+@media (max-width: 1020px){
+    .hideOnMobile{
+        display: none;
+    }
+}
+
+@media (min-width: 1020px){
+    .hideMenu{
+        display: none;
+    }
+}
+
+@media (max-width: 375px){
+    .navSideBar{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 530px) {
+    .CTA-overlay {
+        top: 50%;
+        left: 60%;
+    }
+    
+    .CTA-button {
+        top: 50%;
+        left: 36%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .text-overlay {
+        font-size: 75px;
+        line-height: 75px;
+        left: 50%;
+      }
+      .hero-button {
+        top: 30%;
+        left: 36%;
+        font-size: 35px;
+    }
+
+    .images-circle {
+        border-radius: 50%;
+    }
+
+    
+    .wrapper-section2 img {
+        width: 70%;
+        padding:30px 110px;
+        left: 15%;
+    }
+
+    .img-banner {
+        padding-bottom: 50px;
+    }
+
+    .wrapper {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .wrapper h2 {
+        padding: 20px 0px 0px;
+        font-size: 50px;
+    }
+
+    .wrapper p {
+        padding: 20px 0px 0px;
+        font-size: 24px;
+    }
+
+    .wrapper img{
+        padding-top: 30px;
+
+    }
+
+    .CTA-overlay {
+        top: 50%;
+        left: 53%;
+        font-size: 70px;
+    }
+    
+    .CTA-button {
+        top: 55%;
+        left: 40%;
+        font-size: 50px;
+    }
+
+    .sec3Title {
+        font-size: 60px;
+        padding-top: 30px;
+        position: relative;
+        left: 10%;
+    }
+    
+    .achievementList {
+        padding-top: 40px;
+        position: relative;
+        left: 30%;
+    }
+    
+    .achievementList h1 {
+        font-size: 50px;
+    }
+    
+    .achievementList h3 {
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+
+
+
+    .section1-Content h1 {
+        position: relative;
+        font-size: 50px;
+        left: 30%;
+    }
+    
+    .section1-Content h3 {
+        padding: 30px 80px 40px;
+        font: arial;
+        font-size: 30px;
+    }
+    
+    .socialIcon {
+        width:65px;
+        height: 65px;
+        top: -6%;
+    }
+
+    .contact-overlay {
+        top: 63%;
+        left: 63%;
+        font-size: 70px;
+    }    
+
+    .centerPadding{
+        padding: 0px;
+    }
+
+    .csImage {
+        width: min(80vw, 450px);
+        color: #fff;
+        padding: 26px;
+        gap: 20px;    
+    }
+    
+    
+    .csImage2 {
+        width: min(80vw, 200px);
+        color: #fff;
+        padding: 26px;
+        gap: 20px;
+    }
+
+    .cs-imageWrapper {
+        width: 57%;
+        position: relative;
+        left: 23%;
+
+    }
+
+
+    .csHeader {
+        font-size:70px;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .text-overlay {
+        font-size: 100px;
+        line-height: 147px;
+      }
+
+    
+    .wrapper-section2 img {
+        width: 50%;
+        float: left;
+        padding:30px 50px;
+        left: -5%;
+        padding-left: 15%;
+    }
+
+    .hero-button {
+        top: 25%;
+        left: 39%;
+        font-size: 40px;
+    }
+
+    .wrapper {
+        width: 1000px;
+    }
+
+    .img-info {
+        width:50%;
+        float: right;
+    }
+
+    .images-circle {
+        border-radius: 20%;
+    }
+
+    .wrapper img {
+        padding-top: 0px;
+        width: 50%;
+        float:left;
+    }
+
+    .wrapper h2 {
+        padding: 20px 0px 0px 30px;
+        font-size: 40px;
+    }
+
+    .wrapper p {
+        padding: 20px 0px 0px 30px;
+        font-size: 20px;
+    }
+
+    .CTA-overlay {
+        top: 50%;
+        left: 56%;
+        font-size: 90px;
+    }
+    
+    .CTA-button {
+        top: 60%;
+        left: 45%;
+
+    }
+
+    .sec3Title {
+        font-size: 70px;
+        padding-top: 10px;
+    }
+    
+    .achievementList {
+        display: flex;
+        left: 0%;
+        padding-top: 50px;
+        padding: 30px 30px 0px;
+    }
+    
+    .achievementList h1 {
+        font-size: 50px;
+        padding-right: 50px;
+        padding-top: 50px;
+
+    }
+    
+    .achievementList h3 {
+        font-size: 30px;
+        padding-bottom: 30px;
+        padding-right: 100px;
+
+    }
+
+    .section1-Content h1 {
+        font-size: 55px;
+    }
+
+
+    .contact-overlay {
+        left: 66%;
+        font-size: 80px;
+    }    
+
+    .csImage {
+        width: min(80vw, 450px);
+        color: #fff;
+        padding: 26px;
+        gap: 20px;
+
+    }
+
+
+    
+    
+    .csImage2 {
+        width: min(80vw, 200px);
+        color: #fff;
+        padding: 26px;
+        gap: 20px;
+    }
+
+
+    .csSec2-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cs-imageWrapper {
+        left: 5%;
+        width: 40%;
+        margin: 25px 25px;
+    }
+
+    .csHeader {
+        font-size:80px;
+    }
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .hero-button {
+        top: 40%;
+        left: 45%;
+    }
+
+    .CTA-overlay {
+        top: 50%;
+        left: 43%;
+        font-size: 110px;
+    }
+    
+    .CTA-button {
+        top: 60%;
+        left: 44%;
+        font-size: 50px;
+
+    }
+}
+
+@media only screen and (min-width: 1330px) {
+
+    .text-overlay {
+        left:40%;
+    }
+
+    .hero-button {
+        top: 30%;
+        left: 43%;
+        font-size: 40px;
+    }
+
+    .wrapper-section2 img {
+        left: 10%;
+        width: 20%;
+        padding: 80px 33px;
+        border-radius: 100%;
+    }
+
+    .sec2-Header {
+        text-align: center;
+    }
+
+    .CTA-overlay {
+        top: 50%;
+        left: 46%;
+        font-size: 110px;
+        line-height: 130px;
+    }
+    
+    .CTA-button {
+        top: 43%;
+        left: 42%;
+        font-size: 50px;
+
+    }
+
+    .sec3Title {
+        font-size: 70px;
+        padding-top: 10px;
+        position: relative;
+        right: 4%;
+    }
+    
+    .achievementList {
+        display: flex;
+        left: 0%;
+        padding-top: 50px;
+        padding: 30px 30px 0px;
+        position: relative;
+        left: -4%;
+    }
+    
+    .achievementList h1 {
+        font-size: 50px;
+        padding-right: 50px;
+        padding-top: 50px;
+
+    }
+    
+    .achievementList h3 {
+        font-size: 30px;
+        padding-bottom: 30px;
+        padding-right: 100px;
+
+    }
+
+    .section1-Content h1 {
+        font-size: 60px;
+        left: 35%;
+    }
+    
+    .section1-Content h3 {
+        padding: 30px 110px 40px;
+        font-size: 35px;
+    }
+    
+    .socialIcon {
+        width:75px;
+        height: 75px;
+    }
+
+    .contact-overlay {
+        left: 50%;
+        font-size: 85px;
+    }    
+
+}
