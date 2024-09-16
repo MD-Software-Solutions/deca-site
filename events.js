@@ -45,7 +45,7 @@ window.addEventListener('load', function () {
 
 function change_event(index) {
     document.getElementById('event-title').innerHTML = event_titles[index];
-    document.getElementById('event-summary-title-1').innerHTML = `What is ${event_titles[index]}`;
+    document.getElementById('event-summary-title-1').innerHTML = `What is ${event_titles[index]}?`;
     document.getElementById('event-summary-1').innerHTML = event_summaries[index][0];
     document.getElementById('event-summary-2').innerHTML = event_summaries[index][1];
     document.getElementById('event-summary-3').innerHTML = event_summaries[index][2];

@@ -10,7 +10,7 @@
 
 
 .red {
-    color:darkred
+    color: #5c9edb;
 }
 
 
@@ -88,11 +88,14 @@ But by control the z-index, put the text over the image. */
 }
 
 
+div.open-text-btn {
+    padding-top: 250px;
+}
+
 
 .text-overlay {
 
     /* Position the text */
-    top: 35%;
     left: 55%;
     transform: translate(-50%, -50%);
 
@@ -101,7 +104,6 @@ But by control the z-index, put the text over the image. */
 
     font-size: 50px;
     font-weight: 800;
-    font-family: Arial;
     line-height: 50px;
     z-index: 2;
 
@@ -116,13 +118,16 @@ But by control the z-index, put the text over the image. */
 .hero-button {
     position: relative;
     top: 38%;
-    left: 26%;
+    left: 23%;
     font-size: 25px;
     font-weight: 550;
     color: #fff;
-    background-color: darkred;
+    background-color: #004f98;
     z-index:3;
-    padding: 10px 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 15px;
+    padding-top: 15px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
@@ -130,7 +135,7 @@ But by control the z-index, put the text over the image. */
 }
 
 .hero-button:hover {
-    color: darkred;
+    color: #004f98;
     background-color: white;
     transition: 0.5s;
 }
@@ -603,14 +608,14 @@ nav a:hover {
 
 @media only screen and (min-width: 768px) {
 
-    .text-overlay {
+    .text-overlay { 
         font-size: 75px;
         line-height: 75px;
         left: 50%;
       }
-      .hero-button {
-        top: 42%;
-        left: 36%;
+    
+    .hero-button {
+        left: 8.55%;
         font-size: 35px;
     }
 
@@ -783,12 +788,12 @@ nav a:hover {
         left: -5%;
         padding-left: 15%;
     }
-
+/* 
     .hero-button {
         top: 30%;
         left: 39%;
         font-size: 40px;
-    }
+    } */
 
     .wrapper {
         width: 1000px;
@@ -937,7 +942,7 @@ nav a:hover {
 
     .hero-button {
         top: 40%;
-        left: 45%;
+        left: 5%;
     }
 
     .CTA-overlay {
@@ -962,7 +967,7 @@ nav a:hover {
 
     .hero-button {
         top: 30%;
-        left: 43%;
+        left: 15.5%;
         font-size: 40px;
     }
 
