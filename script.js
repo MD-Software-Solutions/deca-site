@@ -28,10 +28,14 @@ function showToast(event) {
 }
 
 window.addEventListener('load', function() {
+    this.setTimeout(toast, 1000)
+});
+
+function toast() {
     var toastElement = document.getElementById('myToast');
     var toast = new bootstrap.Toast(toastElement, {
         autohide: true,
-        delay: 10000
+        delay: 60000
     });
     toast.show();
-});
+}

@@ -11,6 +11,29 @@ a.dropdown-item {
     box-shadow: none;
 }
 
+@keyframes slideDown {
+    from {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.dropdown-item:focus, .dropdown-item:active {
+    background-color: transparent;
+    color: black;
+    box-shadow: none !important;
+}
+
+
+.dropdown-menu {
+    animation: slideDown 0.3s ease-in-out;
+}
+
+
 
 @keyframes slideFromRight {
     from {
@@ -97,6 +120,7 @@ a.dropdown-item:hover::after {
 .flex-row {
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 }
 
 
