@@ -13,9 +13,7 @@ function copyAll() {
     var string = `
     Email: ${href.textContent},
     GroupMe: #,
-    Insta: ${insta.textContent}
-    `
-
+    Insta: ${insta.textContent}`
     console.log(string)
     navigator.clipboard.writeText(string);
 }
@@ -28,14 +26,21 @@ function showToast(event) {
 }
 
 window.addEventListener('load', function() {
-    var toastElement = document.getElementById('myToast');
-    var toast = new bootstrap.Toast(toastElement, {
-        autohide: true,
-        delay: 10000
-    });
-    toast.show();
+    this.setTimeout(toast, 1000)
 });
 
+function toast() {
+    try {
+        var toastElement = document.getElementById('myToast');
+        var toast = new bootstrap.Toast(toastElement, {
+            autohide: true,
+            delay: 60000
+        });
+        toast.show();
+    } catch {
+        
+    }
+}
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
