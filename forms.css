@@ -34,7 +34,6 @@ a.dropdown-item {
 }
 
 
-
 @keyframes slideFromRight {
     from {
         transform: translateX(100%);
@@ -113,7 +112,9 @@ a.dropdown-item:hover::after {
 
 .flex-col {
     display: flex;
-    flex-direction: column;   
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: auto;
     width: 48%;               
 }
 
@@ -122,6 +123,14 @@ a.dropdown-item:hover::after {
     flex-direction: row;
     overflow: hidden;
 }
+
+@media (max-width: 768px) { 
+    .flex-row {
+        flex-direction: column;
+        display: flex;
+    }
+}
+
 
 
 .event-container p.event-summary {
@@ -183,6 +192,7 @@ iframe {
         width: 100%;
         padding: 0px 0px 0px 0px;
     }
+
 }
 
 
@@ -294,6 +304,8 @@ a.main-title:hover {
     .flex-container {
         flex-direction: column;
     }
+
+    
 }
 
 @media (min-width: 800px) {
