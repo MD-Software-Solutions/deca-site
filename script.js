@@ -28,6 +28,10 @@ function showToast(event) {
 }
 
 window.addEventListener('load', function() {
-    var myToast = new bootstrap.Toast(document.getElementById('myToast'));
-    myToast.show();
+    var toastElement = document.getElementById('myToast');
+    var toast = new bootstrap.Toast(toastElement, {
+        autohide: true,
+        delay: 10000
+    });
+    toast.show();
 });
