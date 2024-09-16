@@ -28,22 +28,25 @@ function showToast(event) {
 }
 
 window.addEventListener('load', function() {
-    this.setTimeout(toast, 1000)
+    var toastElement = document.getElementById('myToast');
+    var toast = new bootstrap.Toast(toastElement, {
+        autohide: true,
+        delay: 10000
+    });
+    toast.show();
 });
 
 
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
 
-function toast() {
-
-    try {
-        var toastElement = document.getElementById('myToast');
-        var toast = new bootstrap.Toast(toastElement, {
-            autohide: true,
-            delay: 60000
-        });
-        toast.show();
-    } catch {
-        
-    }
-    
-}
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
