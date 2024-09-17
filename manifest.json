@@ -1,0 +1,14 @@
+{
+    "name": "JCHS DECA",
+    "short_name": "DECA",
+    "icons": [
+      {
+        "src": "deca.ico",
+        "sizes": "",
+        "type": "image/ico"
+      }
+    ],
+    "start_url": "/index.html",
+    "display": "standalone"
+  }
+  
