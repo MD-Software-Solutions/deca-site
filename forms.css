@@ -2,6 +2,10 @@
     font-family: "Lexend Deca";
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a.dropdown-item {
     position: relative;
     max-width: fit-content;
