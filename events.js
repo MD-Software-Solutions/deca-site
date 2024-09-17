@@ -44,6 +44,7 @@ window.addEventListener('load', function () {
 })
 
 function change_event(index) {
+
     document.getElementById('event-title').innerHTML = event_titles[index];
     document.getElementById('event-summary-title-1').innerHTML = `What is ${event_titles[index]}?`;
     document.getElementById('event-summary-1').innerHTML = event_summaries[index][0];

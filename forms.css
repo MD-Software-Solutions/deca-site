@@ -11,6 +11,17 @@ a.dropdown-item {
     box-shadow: none;
 }
 
+@media (max-width: 767px) {
+    a.nav-link {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    div#collapsibleNavbar {
+        padding-top: 20px;
+    }
+}
+
 @keyframes slideDown {
     from {
         transform: translateY(-10%);
@@ -204,7 +215,7 @@ nav li {
 
 .warning {
     width: 100%;
-    padding-top: 30px;
+    padding-top: 35px;
     position: relative;
     background-color: #004f98;
     color: white;
