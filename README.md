@@ -1,2 +1,3 @@
 https://jchsdeca.github.io/deca-site/
-link
+
+Where we will literally never stop tweaking the navbar
