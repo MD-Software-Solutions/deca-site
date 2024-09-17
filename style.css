@@ -10,7 +10,7 @@
 
 
 .red {
-    color: #5c9edb;
+    color:darkred
 }
 
 
@@ -88,14 +88,11 @@ But by control the z-index, put the text over the image. */
 }
 
 
-div.open-text-btn {
-    padding-top: 250px;
-}
-
 
 .text-overlay {
 
     /* Position the text */
+    top: 35%;
     left: 55%;
     transform: translate(-50%, -50%);
 
@@ -104,6 +101,7 @@ div.open-text-btn {
 
     font-size: 50px;
     font-weight: 800;
+    font-family: Arial;
     line-height: 50px;
     z-index: 2;
 
@@ -117,17 +115,14 @@ div.open-text-btn {
 
 .hero-button {
     position: relative;
-    top: 38%;
-    left: 23%;
-    font-size: 25px;
+    top: 30%;
+    left: 26%;
+    font-size: 10px;
     font-weight: 550;
     color: #fff;
-    background-color: #004f98;
+    background-color: darkred;
     z-index:3;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-bottom: 15px;
-    padding-top: 15px;
+    padding: 10px 25px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
@@ -135,7 +130,7 @@ div.open-text-btn {
 }
 
 .hero-button:hover {
-    color: #004f98;
+    color: darkred;
     background-color: white;
     transition: 0.5s;
 }
@@ -283,76 +278,8 @@ div.open-text-btn {
 }
 
 .images-circle {
-    border-radius: 0%;
+    border-radius: 10%;
 }
-
-.section2-img {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
-@keyframes contentFlyIn {
-    0% {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-        filter: blur(0);
-    }
-}
-
-.circleIMG-content {
-    width: 100%;
-    height: 200px;
-    position: absolute;
-    left: 0;
-    top: 51%;
-    display: flex;
-    background: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
-    z-index: 998;
-    transition: opacity 0.6s;
-}
-
-.circleIMG-content h1 {
-    font-size: 30px;
-    color: white;
-    padding: 0px 13px 0px;
-}
-
-.circleIMG-content2 {
-    width: 100%;
-    height: 200px;
-    position: absolute;
-    left: 0;
-    top: 51%;
-    display: flex;
-    background: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
-    z-index: 998;
-    transition: opacity 0.6s;
-}
-
-.circleIMG-content2 h1 {
-    font-size: 30px;
-    color: white;
-    padding: 0px 13px 0px;
-}
-
-.hidden {
-    opacity: 0;
-    filter: blur(5px);
-}
-
-.show {
-    animation: contentFlyIn 0.6s forwards;
-}
-
 
 .wrapper p{
     padding: 0px 30px 20px;
@@ -414,7 +341,6 @@ nav li.decaLogo {
 }
 
 .navSideBar a {
-    font: arial;
     font-weight: 600;
     height: 100%;
     color: white;
@@ -508,9 +434,9 @@ nav a:hover {
 
 .sec3Title {
     font-weight: 800;
-    font: arial;
     font-size: 25px;
     color: white;
+    max-width: fit-content;
 }
 
 .achievementList {
@@ -528,12 +454,11 @@ nav a:hover {
 .sec3Title::after {
     content: "";
     display: block;
-    width: 80%;
+    width: 100%;
     height: 8px;
     background-color: darkred;
     margin: 20px auto 0;
     position: relative;
-    left: -15%;
     border-radius: 2%;
 }
 
@@ -565,7 +490,6 @@ nav a:hover {
 
 .section1-Content h3 {
     padding: 30px 30px 30px;
-    font: arial;
 }
 
 .socialIcon {
@@ -588,9 +512,35 @@ nav a:hover {
     }
 }
 
-@media (max-width: 375px){
-    .navSideBar{
-        width: 100%;
+@media (max-width: 529px){
+    .hero-button {
+        top: 40%;
+        left: 36%;
+        font-size: 30px;
+    }
+
+    .text-overlay {
+        text-align: center;
+        font-size: 55px;
+        line-height: 75px;
+        left: 50%;
+      }
+
+    .sec3Title {
+        font-size: 30px;
+        padding-top: 30px;
+        position: relative;
+    }
+
+    
+    .section3-txt {
+        padding-top: 240px;
+    }
+    
+    .achievementList {
+        padding-top: 40px;
+        position: relative;
+        left: 2%;
     }
 }
 
@@ -604,48 +554,36 @@ nav a:hover {
         top: 50%;
         left: 36%;
     }
-}
+
+    .hero-button {
+        top: 40%;
+        left: 38%;
+        font-size: 30px;
+    }
+
+    .text-overlay {
+        font-size: 50px;
+        line-height: 75px;
+        left: 50%;
+      }
+
+    }
 
 @media only screen and (min-width: 768px) {
 
-    .text-overlay { 
+    .text-overlay {
         font-size: 75px;
         line-height: 75px;
         left: 50%;
       }
-    
-    .hero-button {
-        left: 8.55%;
+      .hero-button {
+        top: 40%;
+        left: 36%;
         font-size: 35px;
     }
 
-    
-    .circleIMG-content {
-        width: 42%;
-        height: 200px;
-        position: absolute;
-        left: 29%;
-        top: 47%;
-        display: flex;
-        background: rgba(0, 0, 0, 0.5);
-        justify-content: center;
-        align-items: center;
-        z-index: 998;
-        transition: opacity 0.6s;
-    }
-
-    .circleIMG-content2 {
-        width: 42%;
-        height: 200px;
-        position: absolute;
-        left: 29%;
-        top: 47%;
-        display: flex;
-        background: rgba(0, 0, 0, 0.5);
-        justify-content: center;
-        align-items: center;
-        z-index: 998;
-        transition: opacity 0.6s;
+    .images-circle {
+        border-radius: 50%;
     }
 
     
@@ -702,7 +640,6 @@ nav a:hover {
         padding-top: 40px;
         position: relative;
         left: 30%;
-        padding-bottom: 50px;
     }
     
     .achievementList h1 {
@@ -724,7 +661,6 @@ nav a:hover {
     
     .section1-Content h3 {
         padding: 30px 80px 40px;
-        font: arial;
         font-size: 30px;
     }
     
@@ -788,12 +724,12 @@ nav a:hover {
         left: -5%;
         padding-left: 15%;
     }
-/* 
+
     .hero-button {
-        top: 30%;
-        left: 39%;
+        top: 38%;
+        left: 45.555%;
         font-size: 40px;
-    } */
+    }
 
     .wrapper {
         width: 1000px;
@@ -804,32 +740,8 @@ nav a:hover {
         float: right;
     }
 
-    .circleIMG-content {
-        width: 30%;
-        height: 200px;
-        position: absolute;
-        left: 10%;
-        top:193px;
-        display: flex;
-        background: rgba(0, 0, 0, 0.5);
-        justify-content: center;
-        align-items: center;
-        z-index: 998;
-        transition: opacity 0.6s;
-    }
-
-    .circleIMG-content2 {
-        width: 30%;
-        height: 200px;
-        position: absolute;
-        left: 60%;
-        top:193px;
-        display: flex;
-        background: rgba(0, 0, 0, 0.5);
-        justify-content: center;
-        align-items: center;
-        z-index: 998;
-        transition: opacity 0.6s;
+    .images-circle {
+        border-radius: 20%;
     }
 
     .wrapper img {
@@ -863,17 +775,12 @@ nav a:hover {
     .sec3Title {
         font-size: 70px;
         padding-top: 10px;
-        left: 2%;
+        left: 1.5%;
     }
-
-    .sec3Title::after {
-        left: -2%;
-    }
-    
     
     .achievementList {
         display: flex;
-        left: -2%;
+        left: -4.0%;
         padding-top: 50px;
         padding: 30px 30px 0px;
     }
@@ -940,9 +847,10 @@ nav a:hover {
 
 @media only screen and (min-width: 1440px) {
 
+
     .hero-button {
         top: 40%;
-        left: 5%;
+        left: 45%;
     }
 
     .CTA-overlay {
@@ -959,7 +867,7 @@ nav a:hover {
     }
 }
 
-@media only screen and (min-width: 1330px) {
+@media (min-width: 1330px) {
 
     .text-overlay {
         left:20%;
@@ -967,14 +875,15 @@ nav a:hover {
 
     .hero-button {
         top: 30%;
-        left: 15.5%;
-        font-size: 40px;
+        left: 47.555%;
+        font-size: 30px;
     }
 
     .wrapper-section2 img {
-        left: 2%;
-        width: 24%;
-        padding: 80px 10px;
+        left: 10%;
+        width: 20%;
+        padding: 80px 33px;
+        border-radius: 100%;
     }
 
     .sec2-Header {
@@ -999,7 +908,7 @@ nav a:hover {
         font-size: 70px;
         padding-top: 10px;
         position: relative;
-        right: 4%;
+        left: 28%;
     }
     
     .achievementList {
@@ -1008,7 +917,7 @@ nav a:hover {
         padding-top: 50px;
         padding: 30px 30px 0px;
         position: relative;
-        left: -4%;
+        left: 22.5%;
     }
     
     .achievementList h1 {
@@ -1044,53 +953,5 @@ nav a:hover {
         left: 50%;
         font-size: 85px;
     }    
-
-    .circleIMG-content {
-        width: 22.5%;
-        height: 200px;
-        position: absolute;
-        left: 2.7%;
-        top: 235px;
-        display: flex;
-        background: rgba(0, 0, 0, 0.5);
-        justify-content: center;
-        align-items: center;
-        z-index: 998;
-        border-radius: 0 0 13% 13%;
-        transition: opacity 0.6s;
-    }
-
-    .circleIMG-content2 {
-        width: 22.5%;
-        height: 200px;
-        position: absolute;
-        left: 26.7%;
-        top: 235px;
-        display: flex;
-        background: rgba(0, 0, 0, 0.5);
-        justify-content: center;
-        align-items: center;
-        z-index: 998;
-        border-radius: 0 0 13% 13%;
-        transition: opacity 0.6s;
-    }
-
-
-    .images-circle{
-        border-radius: 20%;
-    }
-    
-    .circleIMG-content h1 {
-        font-size: 25px;
-        color: white;
-        padding: 0px 13px 0px;
-    }
-        
-    .circleIMG-content2 h1 {
-        font-size: 25px;
-        color: white;
-        padding: 0px 13px 0px;
-    }
-
 
 }
