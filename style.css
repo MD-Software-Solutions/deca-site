@@ -74,7 +74,6 @@ But by control the z-index, put the text over the image. */
 
     font-size: 50px;
     font-weight: 800;
-    font-family: Arial;
     line-height: 50px;
     z-index: 2;
 
@@ -101,7 +100,6 @@ But by control the z-index, put the text over the image. */
 
     font-size: 50px;
     font-weight: 800;
-    font-family: Arial;
     line-height: 50px;
     z-index: 2;
 
@@ -250,7 +248,6 @@ But by control the z-index, put the text over the image. */
 .sec2-Header{
     padding: 40px 30px 20px;
     font-size: 44px;
-    font-family: Arial;
     line-height: 44px;
     padding-bottom: 60px;
     text-align: center;
@@ -273,7 +270,6 @@ But by control the z-index, put the text over the image. */
 .wrapper h2{
     padding: 30px 30px 20px;
     font-size: 44px;
-    font-family: Arial;
     line-height: 44px;
 }
 
@@ -284,7 +280,6 @@ But by control the z-index, put the text over the image. */
 .wrapper p{
     padding: 0px 30px 20px;
     font-size: 16px;
-    font-family: Arial;
     line-height: 24px;
 }
 
@@ -384,7 +379,6 @@ nav a:hover {
 
     font-size: 50px;
     font-weight: 800;
-    font-family: Arial;
     line-height: 80px;
     z-index: 2;
 
