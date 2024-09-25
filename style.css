@@ -4,6 +4,11 @@
     font-family: "Lexend Deca";
 }
 
+.resize {
+    width: 10%;
+    background-color: white;
+}
+
 .white {
     color: white;
 }
