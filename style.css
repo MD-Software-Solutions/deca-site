@@ -135,9 +135,10 @@ But by control the z-index, put the text over the image. */
 }
 
 .hero-button {
-    position: relative;
-    top: 30%;
-    left: 26%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(0,350%);
     font-size: 10px;
     font-weight: 550;
     color: #fff;
@@ -269,6 +270,7 @@ But by control the z-index, put the text over the image. */
     width: 100%;
     padding-bottom:30px;
     border-radius: 10%;
+    filter: brightness(90%);
 }
 
 .section2-txt{
@@ -967,7 +969,6 @@ nav a:hover {
         max-height: 370px;
         padding: 80px 50px;
         border-radius: 40%;
-        filter: brightness(80%);
     }
 
     .sec2-Header {
