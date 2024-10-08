@@ -280,6 +280,9 @@ a.link-to-form:active {
 .media-container img {
     width: 200px;
     height: 200px;
+
+    min-width: 200px;
+    min-height: 200px;
 }
 
 #groupMeSizer {
